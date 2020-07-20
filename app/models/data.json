@@ -1,0 +1,14 @@
+List down collections of the current database:
+show collections;
+db.getCollectionNames();
+Create a Collection:
+db.createCollection("collectionName");
+Insert a Document in a Collection:
+// Insert single document
+//
+db.<collectionName>.insert({field1: "value", field2: "value"})
+//
+// Insert multiple documents
+//
+db.<collectionName>.insert([{field1: "value1"}, {field1: "value2"}])
+db.<collectionName>.insertMany([{field1: "value1"}, {field1: "value2"}])
